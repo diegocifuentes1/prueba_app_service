@@ -10,13 +10,21 @@ A simple FastAPI test application with sample endpoints for development and test
 
 ## Installation
 
-1. Install dependencies using pip:
+### Option 1: Using requirements.txt (Recommended)
 ```bash
-pip install -e .
+# Install production dependencies
+pip install -r requirements.txt
+
+# Install development dependencies
+pip install -r requirements-dev.txt
 ```
 
-2. For development dependencies:
+### Option 2: Using pyproject.toml
 ```bash
+# Install production dependencies
+pip install -e .
+
+# Install development dependencies
 pip install -e ".[dev]"
 ```
 
@@ -58,7 +66,9 @@ The application is configured with:
 
 ```
 prueba_app_service/
-├── main.py           # FastAPI application
-├── pyproject.toml    # Project configuration and dependencies
-└── README.md         # Project documentation
+├── main.py              # FastAPI application
+├── pyproject.toml       # Project configuration and dependencies
+├── requirements.txt     # Production dependencies
+├── requirements-dev.txt # Development dependencies
+└── README.md            # Project documentation
 ``` 
