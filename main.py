@@ -60,7 +60,7 @@ def read_test() -> Dict[str, str]:
     """
     return {
         "endpoint": "/test",
-        "message": "This is a test endpoint",
+        "message": "This is a test endpoint 2",
         "status": "working"
     }
 
